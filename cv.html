@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Arnaldo Gimenez</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/3456/PNG/512/curriculum_vitae_paper_document_icon_219537.png">
+    <link rel="stylesheet" href="cv-estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd426422f0.js" crossorigin="anonymous"></script>
+    <!--OG-->
+    <meta property="og:title" content="CV Arnaldo Gimenez" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=" https://github.com/" />
+    <meta property="og:image" content=" https://www.portafolio.co/files/article_main/uploads/2016/04/26/571fb7d8122ef.jpeg" />
+    <meta property="og:description" content="Curriculm Vitae de Arnaldo Gimenez, expero en HTML, CSS Y JS" />
+</head>
+<body>
+  <!---MENU ENCABEZADO-->
+  <header>
+    <div class="interior"> 
+      <a href="" class="logo"><img src="./img-cv/logo.jpg" alt="Logo"></a>
+      <nav class="navegacion">
+       <nav id="nav">
+          <ul>
+           <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+           <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+           <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <li><a href="#massobremi" onclick="seleccionar()">+SOBRE MI</a></li>
+          </ul>
+        </nav>
+      </nav> 
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  
+  <!--PRESENTACION INICIO-->
+  <section id="inicio" class="inicio"></section>
+  <h1>Soy Arnaldo Gimenez</h1> 
+  <h2>Experto HTML, CSS Y JS</h2>
+
+  <!---Inicio Carrousel-->
+    <div id="conteItemsCarrusel">
+      <div class="itemCarrusel" id="itemCarrusel-1">
+          <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+            <img src="./img-cv/imagen-1.jpg" alt="imagen1">
+          </div>
+          <div class="flechasCarrusel">
+           <a href="#itemCarrusel-3">
+            <i class="fas fa-chevron-left"></i>
+           </a>
+           <a href="#itemCarrusel-2">
+            <i class="fas fa-chevron-right"></i>
+           </a>
+         </div>
+      </div>
+      <div class="itemCarrusel" id="itemCarrusel-2">
+        <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+          <img src="./img-cv/imagen-2.jpg" alt="imagen2">
+        </div>
+        <div class="flechasCarrusel">
+          <a href="#itemCarrusel-1">
+            <i class="fas fa-chevron-left"></i>
+           </a>
+           <a href="#itemCarrusel-3">
+            <i class="fas fa-chevron-right"></i>
+           </a>
+         </div>
+        </div>
+        <div class="itemCarrusel" id="itemCarrusel-3">
+          <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+            <img src="./img-cv/imagen-3.jpg" alt="imagen3">
+          </div>
+          <div class="flechasCarrusel">
+            <a href="#itemCarrusel-2">
+              <i class="fas fa-chevron-left"></i>
+             </a>
+             <a href="#itemCarrusel-1">
+              <i class="fas fa-chevron-right"></i>
+             </a>
+          </div>
+        </div>
+    </div>
+    <div id="contePuntos">
+      <a href="#itemCarrusel-1">°</b>
+      <a href="#itemCarrusel-2">°</b>
+      <a href="#itemCarrusel-3">°</b>
+    </div>
+
+    <!---SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+           <h2>Sobre Mí</h2>
+           <p><span>Hola, Soy Arnaldo Gimenez </span>Full-stack Developer dispuesto a trabajar en cualquier proyecto desafiante y superarme a mi mismo cada día mientras sumo al equipo lo mejor de mi persona.</p>
+
+           <div class="fila">
+            <!---datos personales-->
+            <div class="col">
+              <h3>Datos Personales</h3>
+              <ul>
+                <li>
+                  <strong>Fecha de cumpleaños</strong>
+                  24/12/1971
+                </li>
+                <li>
+                  <strong>Teléfono</strong>
+                  806 516 555
+                </li>
+                <li>
+                  <strong>Email</strong>
+                  arnaldo71@hotmail.com
+                </li>
+                <li>
+                  <strong>Dirección</strong>
+                  Balcarce 50, Buenos Aires, Argentina 
+                </li>
+                <li>
+                  <strong>Puesto</strong>
+                  <span>FREELANCE</span> 
+                </li>
+              </ul>
+
+            </div>
+
+            <!--intereses-->
+            <div class="col">
+              <h3>Intereses</h3>
+              <div class="contenedor-intereses">
+                <div class="interes">
+                  <i class="fa-sharp fa-solid fa-motorcycle"></i>
+                  <span>MOTOS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-book"></i>
+                  <span>LIBROS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>VIAJAR</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-ticket"></i>
+                  <span>CINE</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-car"></i>
+                  <span>CARRERAS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-music"></i>
+                  <span>MUSICA</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>FOTOGRAFIA</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-landmark"></i>
+                  <span>INVERSIONES</span>
+                </div>
+              </div>
+            </div>
+           </div>
+      </div>     
+    </section>
+
+    <!--SKILLS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!--detalles tecnicos-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso htmlcss">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Angular</span>
+              <div class="barra-skill">
+                <div class="progreso angular">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>#C</span>
+              <div class="barra-skill">
+                <div class="progreso c">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL Server</span>
+              <div class="barra-skill">
+                <div class="progreso sql">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--detalles profesionales-->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Liderazgo</span>
+              <div class="barra-skill">
+                <div class="progreso liderazgo">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso trabajoequipo">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Resolucion de problemas</span>
+              <div class="barra-skill">
+                <div class="progreso resolucionproblemas">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Ética</span>
+              <div class="barra-skill">
+                <div class="progreso etica">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso creatividad">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Estudios secundarios</h4>
+              <span class="casa">Colegio Nacional Buenos Aires</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>bla bla bla bla bla lorem ipsum</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Formacion Universitaria</h4>
+              <span class="casa">UTN</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>bla bla bla bla bla lorem ipsum</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Curso HTML</h4>
+              <span class="casa">Udemy</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>bla bla bla bla bla lorem ipsum</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Curso Ruby </h4>
+              <span class="casa">Code-house</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>bla bla bla bla bla lorem ipsum</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Desarrollo frontend</h4>
+              <span class="casa">Ticmas</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>bla bla bla bla bla lorem ipsum</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="col derecha">
+            <h3>Experiencia Laboral</h3>
+            <div class="item der">
+              <h4>Full-stack Developer</h4>
+              <span class="casa">Banco Macro</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>Develop and customization functionality for a banking platform on multiple channels</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Instructor</h4>
+              <span class="casa">IncluIT</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>Training for interns to learn the basics and deeps from Angular</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Full-stack Developer </h4>
+              <span class="casa">Neoris - Santander España</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>Migration of a backoffice system for Santander Bank</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa">Mercadolibre</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>Informatic security</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Instructor</h4>
+              <span class="casa">Ticmas</span>
+              <span class="fecha">2000 - 2004</span>
+              <p>Training for interns to learn the basics</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>   
+          </div>       
+        </div>
+      </div>
+    </section>
+
+    <!---PROYECTOS-->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="./img-cv/p1.jpg" alt="portfolio1">
+            <div class="overlay">
+             <h3>Diseño Creativo</h3>
+             <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img-cv/p2.jpg" alt="portfolio2">
+            <div class="overlay">
+             <h3>Diseño Creativo</h3>
+             <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img-cv/p3.jpg" alt="portfolio3">
+            <div class="overlay">
+             <h3>Diseño Creativo</h3>
+             <p>Fotografia</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img-cv/p4.jpg" alt="portfolio4">
+            <div class="overlay">
+             <h3>Diseño Creativo</h3>
+             <p>Fotografia</p>
+            </div>
+          </div>  
+          <div class="proyecto">
+              <img src="./img-cv/p5.jpg" alt="portfolio5">
+              <div class="overlay">
+               <h3>Diseño Creativo</h3>
+               <p>Fotografia</p>
+              </div>
+          </div>  
+          <div class="proyecto">
+            <img src="./img-cv/p6.jpg" alt="portfolio6">
+            <div class="overlay">
+             <h3>Diseño Creativo</h3>
+             <p>Fotografia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACTO-->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <!--Formulario-->
+          <div class="col">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Número telefónico">
+            <input type="text" placeholder="Direccion de correo">
+            <input type="text" placeholder="Tema">
+            <textarea name"" id"" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button>
+              Enviar Mensaje <i class="fa-solid fa-envelope"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!--MAPA-->
+          <div class="col">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1ShnK6Qj_F9r0eKsKtNU1fGBNhTQ&hl=en&ehbc=2E312F"></iframe>
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  Balcarce 50, Buenos Aires, Argentina
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  Llamame: 806 516 555
+                </li>
+                <li>
+                  <i class="fa-solid fa-at"></i>
+                  Email: arnaldo71@hotmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--"MAS SOBRE MI"-->
+    <section id="massobremi" class="massobremi">
+      <div class="contenido-seccion">
+        <h3>Mas sobre mi</h3>
+    <iframe width="445" height="315" src="https://www.youtube.com/embed/y3fzhMnGs5E?&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="445" height="315" src="https://www.youtube.com/embed/pciMvPoeu0w?&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe id="odysee-iframe" width="445" height="315" src="https://odysee.com/$/embed/@MyYoutube:d/Kansas---Carry-on-Wayward-Son-(Official-Video):d?r=91itk2agNjHFrEGubRBH2ZmQprqZoVhC" allowfullscreen></iframe>
+
+    <!---FOOTER-->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-sharp fa-solid fa-angles-up"></i>
+      </a>
+    <p>© 2023 - CV Arnaldo Gimenez / Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
